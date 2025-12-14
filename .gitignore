@@ -1,0 +1,9 @@
+.idea/
+.venv/
+__pycache__/
+
+token.json
+client_secret.json
+
+yt-vids/
+yt-vids_parts/
