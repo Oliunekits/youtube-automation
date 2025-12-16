@@ -11,7 +11,6 @@ from googleapiclient.http import MediaFileUpload
 from googleapiclient.errors import HttpError
 
 
-# ================== SETTINGS ==================
 
 SOURCE_DIR = "yt-vids"
 PARTS_DIR = "yt-vids_parts"
@@ -28,7 +27,6 @@ UPLOADED_LIST_FILE = "uploaded.txt"
 DEFAULT_TAGS = ["shorts", "youtubeshorts", "viral", "trending", "shortsvideo"]
 DEFAULT_PRIVACY = "public"  # "private" or "unlisted"
 
-# ==============================================
 
 
 def clean_title(raw_title: str) -> str:
