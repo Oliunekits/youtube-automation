@@ -1,15 +1,12 @@
 import os
 import math
 from pathlib import Path
-
 from moviepy.editor import VideoFileClip
-
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
 from googleapiclient.errors import HttpError
-
 
 
 SOURCE_DIR = "yt-vids"
@@ -30,19 +27,12 @@ DEFAULT_PRIVACY = "public"  # "private" or "unlisted"
 
 
 def clean_title(raw_title: str) -> str:
-    """
-    Removes technical prefixes up to the first dash.
-    Example: 'SSYouTube.online_ExileShow - Title...' -> 'Title...'
-    """
     if "-" in raw_title:
         raw_title = raw_title.split("-", 1)[1].strip()
     return raw_title.strip()
 
 
 def to_vertical_9x16(clip):
-    """
-    Crops the center and resizes to 9:16 (1080x1920).
-    """
     target_w = 1080
     target_h = 1920
     target_ratio = target_w / target_h
