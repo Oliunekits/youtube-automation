@@ -21,7 +21,7 @@ SCOPES = ["https://www.googleapis.com/auth/youtube.upload"]
 MAX_UPLOADS_PER_RUN = 10
 UPLOADED_LIST_FILE = "uploaded.txt"
 
-DEFAULT_TAGS = ["shorts", "youtubeshorts", "viral", "trending", "shortsvideo"]
+DEFAULT_TAGS = ["shorts", "youtubeshorts", "viral", "trending", "shortsvideo"] # type any tag what you want
 DEFAULT_PRIVACY = "public"  
 
 
