@@ -198,7 +198,7 @@ def upload_existing_parts(max_uploads: int = MAX_UPLOADS_PER_RUN):
 
         full_path = os.path.join(PARTS_DIR, filename)
 
-        raw_stem = Path(filename).stem  # "..._part_12"
+        raw_stem = Path(filename).stem  
         base_stem = raw_stem.split("_part_")[0]
         base_title = clean_title(base_stem)
 
